@@ -24,4 +24,9 @@ Go to root folder
 -- RUN: npm run start
 
 ## Below is the look and feel of the page
- 
+
+### Desktop
+![Desktop](https://github.com/rahullohakare20/ecommerse-graphql-nextjs/blob/main/screenshot/Desktop.png?raw=true)
+
+### Mobile
+![Mobile](https://github.com/rahullohakare20/ecommerse-graphql-nextjs/blob/main/screenshot/Mobile.png?raw=true)
