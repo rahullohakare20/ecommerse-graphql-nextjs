@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useQuery, gql } from '@apollo/client';
 import Pagination from "react-js-pagination";
 import Product from './Product';
 

@@ -1,10 +1,6 @@
 import { useEffect, useState, ReactNode } from 'react'
 
-type Props = {
-  children?: ReactNode
-}
-
-const CSRProvider = ({ children, ...delegated }: Props) => {
+const CSRProvider = ({ children, ...delegated }) => {
   const [hasMounted, setHasMounted] = useState(false)
 
   useEffect(() => {

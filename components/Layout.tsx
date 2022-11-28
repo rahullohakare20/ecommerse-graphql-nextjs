@@ -30,7 +30,7 @@ const Layout = ({ title = 'This is the default title' }) => {
   const [order, setOrder] = useState("DESC");
   const [sortBy, setSortBy] = useState("title");
   const [selectedBrands, setSelectedBrands] = useState([]);
-  const { loading, error, data } = useQuery(GET_PRODUCT);
+  const { data } = useQuery(GET_PRODUCT);
   const [productList, setProductList] = useState([]);
   const [brands, setBrands] = useState({});
   const [bannerProduct, setBannerProduct] = useState(productList[0]);
@@ -56,7 +56,7 @@ const Layout = ({ title = 'This is the default title' }) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <h1 className="text-center m-10 text-4xl">{title}</h1>
+    <h1 className="text-5xl font-bold text-center m-10 text-decoration-line: underline">{title}</h1>
     <div className="grid grid-cols-1 gap-1">
       {bannerPosition === "TOP" && <Banner bannerProduct={bannerProduct} />}
     </div>
@@ -111,13 +111,12 @@ const Layout = ({ title = 'This is the default title' }) => {
 
           />
         </div>
-
       </main>
     </div>
     <div className="grid grid-cols-1 gap-1">
       {bannerPosition === "BOTTOM" && <Banner bannerProduct={bannerProduct} />}
     </div>
-  </div >
+  </div>
 }
 
 export default Layout
